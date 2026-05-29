@@ -15,16 +15,20 @@
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a class="nav__brand" href="#top">
-        <span class="nav__brand-en">Shih-Hsun Chang</span>
-        <span class="nav__brand-zh">張士勳</span>
+        <span class="nav__brand-en" data-i18n="brandPrimary">Shih-Hsun Chang</span>
+        <span class="nav__brand-zh" data-i18n="brandSecondary">張士勳</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#research" data-i18n="navResearch">Research</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#teaching" data-i18n="navTeaching">Teaching</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
       </nav>
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <span class="lang-switch__opt" data-lang="en">EN</span>
+        <span class="lang-switch__opt" data-lang="zh">繁中</span>
+      </button>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -36,20 +40,20 @@
     <div class="hero__bg" aria-hidden="true"></div>
     <div class="hero__inner">
       <div class="hero__avatar" aria-hidden="true">SC</div>
-      <p class="hero__eyebrow">Department of Information Technology · Ling Tung University</p>
+      <p class="hero__eyebrow" data-i18n="heroEyebrow">Department of Information Technology · Ling Tung University</p>
       <h1 class="hero__name">
-        Professor Shih-Hsun Chang
-        <span class="hero__name-zh">張士勳 副教授</span>
+        <span data-i18n="heroName">Professor Shih-Hsun Chang</span>
+        <span class="hero__name-zh" data-i18n="heroNameSub">張士勳 副教授</span>
       </h1>
-      <p class="hero__title">Associate Professor</p>
-      <p class="hero__lead">
+      <p class="hero__title" data-i18n="heroTitle">Associate Professor</p>
+      <p class="hero__lead" data-i18n="heroLead">
         Researcher and educator working at the intersection of
         <strong>artificial intelligence</strong>, <strong>machine learning</strong>,
         <strong>cybersecurity</strong>, and <strong>aerospace engineering</strong>.
       </p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#research">Explore Research</a>
-        <a class="btn btn--ghost" href="mailto:sschang@mail.ltu.edu.tw">Get in Touch</a>
+        <a class="btn btn--primary" href="#research" data-i18n="heroBtnResearch">Explore Research</a>
+        <a class="btn btn--ghost" href="mailto:sschang@mail.ltu.edu.tw" data-i18n="heroBtnContact">Get in Touch</a>
       </div>
     </div>
     <a class="hero__scroll" href="#about" aria-label="Scroll to content">&#8595;</a>
@@ -59,24 +63,24 @@
     <!-- About -->
     <section class="section" id="about">
       <div class="section__head">
-        <span class="section__kicker">01 — About</span>
-        <h2 class="section__title">Biography</h2>
+        <span class="section__kicker" data-i18n="aboutKicker">01 — About</span>
+        <h2 class="section__title" data-i18n="aboutTitle">Biography</h2>
       </div>
       <div class="about">
         <div class="about__text">
-          <p>
+          <p data-i18n="aboutP1">
             <strong>Shih-Hsun Chang (張士勳)</strong> is a full-time Associate Professor in the
             Department of Information Technology at <strong>Ling Tung University</strong>. His work
             combines a strong engineering foundation with modern computing, spanning intelligent
             systems, secure networks, and applied research.
           </p>
-          <p>
+          <p data-i18n="aboutP2">
             He completed his doctoral and master's studies at National Cheng Kung University and holds
             a bachelor's degree from National Central University — a path that grounds his teaching in
             rigorous theory while keeping it connected to real-world application. In the classroom and
             the lab, he guides students toward building systems that are both intelligent and trustworthy.
           </p>
-          <p>
+          <p data-i18n="aboutP3">
             His research interests center on <strong>artificial intelligence</strong> and
             <strong>machine learning</strong>, with a particular focus on <strong>network and
             information security</strong>, alongside interests rooted in <strong>aerospace
@@ -84,12 +88,12 @@
           </p>
         </div>
         <aside class="about__card">
-          <h3>At a glance</h3>
+          <h3 data-i18n="aboutCardTitle">At a glance</h3>
           <ul class="facts">
-            <li><span>Role</span><strong>Associate Professor</strong></li>
-            <li><span>Department</span><strong>Information Technology</strong></li>
-            <li><span>University</span><strong>Ling Tung University</strong></li>
-            <li><span>Email</span><a href="mailto:sschang@mail.ltu.edu.tw">sschang@mail.ltu.edu.tw</a></li>
+            <li><span data-i18n="factRoleLabel">Role</span><strong data-i18n="factRoleValue">Associate Professor</strong></li>
+            <li><span data-i18n="factDeptLabel">Department</span><strong data-i18n="factDeptValue">Information Technology</strong></li>
+            <li><span data-i18n="factUniLabel">University</span><strong data-i18n="factUniValue">Ling Tung University</strong></li>
+            <li><span data-i18n="factEmailLabel">Email</span><a href="mailto:sschang@mail.ltu.edu.tw">sschang@mail.ltu.edu.tw</a></li>
           </ul>
         </aside>
       </div>
@@ -98,30 +102,30 @@
     <!-- Research -->
     <section class="section section--alt" id="research">
       <div class="section__head">
-        <span class="section__kicker">02 — Research</span>
-        <h2 class="section__title">Areas of Expertise</h2>
-        <p class="section__sub">Specialization: 人工智慧、網路安全、航空工程 (AI, Cybersecurity, Aerospace Engineering)</p>
+        <span class="section__kicker" data-i18n="researchKicker">02 — Research</span>
+        <h2 class="section__title" data-i18n="researchTitle">Areas of Expertise</h2>
+        <p class="section__sub" data-i18n="researchSub">Specialization: 人工智慧、網路安全、航空工程 (AI, Cybersecurity, Aerospace Engineering)</p>
       </div>
       <div class="cards">
         <article class="card">
           <div class="card__icon" aria-hidden="true">&#129302;</div>
-          <h3>Artificial Intelligence</h3>
-          <p>Designing intelligent systems that perceive, reason, and adapt — from foundational models to applied decision-making tools.</p>
+          <h3 data-i18n="card1Title">Artificial Intelligence</h3>
+          <p data-i18n="card1Body">Designing intelligent systems that perceive, reason, and adapt — from foundational models to applied decision-making tools.</p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true">&#128202;</div>
-          <h3>Machine Learning</h3>
-          <p>Building and training data-driven models that learn patterns and generalize to new, unseen problems.</p>
+          <h3 data-i18n="card2Title">Machine Learning</h3>
+          <p data-i18n="card2Body">Building and training data-driven models that learn patterns and generalize to new, unseen problems.</p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true">&#128274;</div>
-          <h3>Cybersecurity</h3>
-          <p>Protecting networks, systems, and information through secure architecture, threat analysis, and defensive techniques.</p>
+          <h3 data-i18n="card3Title">Cybersecurity</h3>
+          <p data-i18n="card3Body">Protecting networks, systems, and information through secure architecture, threat analysis, and defensive techniques.</p>
         </article>
         <article class="card">
           <div class="card__icon" aria-hidden="true">&#9992;</div>
-          <h3>Aerospace Engineering</h3>
-          <p>Applying engineering principles to flight and aerospace systems, bridging classical engineering and computation.</p>
+          <h3 data-i18n="card4Title">Aerospace Engineering</h3>
+          <p data-i18n="card4Body">Applying engineering principles to flight and aerospace systems, bridging classical engineering and computation.</p>
         </article>
       </div>
     </section>
@@ -129,32 +133,32 @@
     <!-- Education -->
     <section class="section" id="education">
       <div class="section__head">
-        <span class="section__kicker">03 — Education</span>
-        <h2 class="section__title">Academic Background</h2>
+        <span class="section__kicker" data-i18n="eduKicker">03 — Education</span>
+        <h2 class="section__title" data-i18n="eduTitle">Academic Background</h2>
       </div>
       <ol class="timeline">
         <li class="timeline__item">
           <div class="timeline__dot" aria-hidden="true"></div>
           <div class="timeline__body">
-            <h3>Ph.D.</h3>
-            <p class="timeline__org">National Cheng Kung University</p>
-            <p class="timeline__note">國立成功大學 — Doctoral studies</p>
+            <h3 data-i18n="eduPhdDegree">Ph.D.</h3>
+            <p class="timeline__org" data-i18n="eduPhdOrg">National Cheng Kung University</p>
+            <p class="timeline__note" data-i18n="eduPhdNote">國立成功大學 — Doctoral studies</p>
           </div>
         </li>
         <li class="timeline__item">
           <div class="timeline__dot" aria-hidden="true"></div>
           <div class="timeline__body">
-            <h3>Master's Degree</h3>
-            <p class="timeline__org">National Cheng Kung University</p>
-            <p class="timeline__note">國立成功大學 — Graduate studies</p>
+            <h3 data-i18n="eduMsDegree">Master's Degree</h3>
+            <p class="timeline__org" data-i18n="eduMsOrg">National Cheng Kung University</p>
+            <p class="timeline__note" data-i18n="eduMsNote">國立成功大學 — Graduate studies</p>
           </div>
         </li>
         <li class="timeline__item">
           <div class="timeline__dot" aria-hidden="true"></div>
           <div class="timeline__body">
-            <h3>Bachelor's Degree</h3>
-            <p class="timeline__org">National Central University</p>
-            <p class="timeline__note">國立中央大學 — Undergraduate studies</p>
+            <h3 data-i18n="eduBsDegree">Bachelor's Degree</h3>
+            <p class="timeline__org" data-i18n="eduBsOrg">National Central University</p>
+            <p class="timeline__note" data-i18n="eduBsNote">國立中央大學 — Undergraduate studies</p>
           </div>
         </li>
       </ol>
@@ -163,21 +167,21 @@
     <!-- Teaching -->
     <section class="section section--alt" id="teaching">
       <div class="section__head">
-        <span class="section__kicker">04 — Teaching</span>
-        <h2 class="section__title">Teaching & Mentorship</h2>
+        <span class="section__kicker" data-i18n="teachKicker">04 — Teaching</span>
+        <h2 class="section__title" data-i18n="teachTitle">Teaching & Mentorship</h2>
       </div>
       <div class="teaching">
-        <p>
+        <p data-i18n="teachBody">
           As an Associate Professor in the Department of Information Technology, Professor Chang teaches
           and mentors students across the core themes of his research. His courses connect fundamental
           computing concepts with hands-on practice in intelligent and secure systems.
         </p>
         <div class="tags">
-          <span class="tag">Artificial Intelligence</span>
-          <span class="tag">Machine Learning</span>
-          <span class="tag">Network Security</span>
-          <span class="tag">Information Technology</span>
-          <span class="tag">Data-Driven Systems</span>
+          <span class="tag" data-i18n="tag1">Artificial Intelligence</span>
+          <span class="tag" data-i18n="tag2">Machine Learning</span>
+          <span class="tag" data-i18n="tag3">Network Security</span>
+          <span class="tag" data-i18n="tag4">Information Technology</span>
+          <span class="tag" data-i18n="tag5">Data-Driven Systems</span>
         </div>
       </div>
     </section>
@@ -185,21 +189,21 @@
     <!-- Contact -->
     <section class="section" id="contact">
       <div class="section__head">
-        <span class="section__kicker">05 — Contact</span>
-        <h2 class="section__title">Get in Touch</h2>
+        <span class="section__kicker" data-i18n="contactKicker">05 — Contact</span>
+        <h2 class="section__title" data-i18n="contactTitle">Get in Touch</h2>
       </div>
       <div class="contact">
         <div class="contact__card">
-          <h3>Email</h3>
+          <h3 data-i18n="contactEmailLabel">Email</h3>
           <a href="mailto:sschang@mail.ltu.edu.tw">sschang@mail.ltu.edu.tw</a>
         </div>
         <div class="contact__card">
-          <h3>Department</h3>
-          <p>Department of Information Technology<br />Ling Tung University, Taiwan</p>
+          <h3 data-i18n="contactDeptLabel">Department</h3>
+          <p data-i18n="contactDeptValue">Department of Information Technology<br />Ling Tung University, Taiwan</p>
         </div>
         <div class="contact__card">
-          <h3>Official Profile</h3>
-          <a href="https://aisweb.ltu.edu.tw/ep/show?ldapid=P092043" target="_blank" rel="noopener">
+          <h3 data-i18n="contactProfileLabel">Official Profile</h3>
+          <a href="https://aisweb.ltu.edu.tw/ep/show?ldapid=P092043" target="_blank" rel="noopener" data-i18n="contactProfileLink">
             University faculty page &#8599;
           </a>
         </div>
@@ -208,8 +212,8 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Shih-Hsun Chang · Department of Information Technology, Ling Tung University</p>
-    <p class="footer__note">
+    <p><span data-i18n="footerCopyPrefix">&copy;</span> <span id="year"></span> <span data-i18n="footerCopySuffix">Shih-Hsun Chang · Department of Information Technology, Ling Tung University</span></p>
+    <p class="footer__note" data-i18n="footerNote">
       Information compiled from the
       <a href="https://aisweb.ltu.edu.tw/ep/show?ldapid=P092043" target="_blank" rel="noopener">official university profile</a>.
     </p>
